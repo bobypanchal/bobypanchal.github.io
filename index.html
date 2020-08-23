@@ -547,7 +547,7 @@
     <script type="text/javascript" src="demo/styleswitcher.js"></script>
     <script type="text/javascript" src="demo/demo.js"></script>
         <div class="demo-style-switch" id="switch-style">
-            <a class="switch-button"><i class="fa fa-snowflake-o fa-spin"></i></a>
+            <a class="switch-button"><i id="theme"class="fa fa-sun-o"></i></a>
             <div class="switched-options"></div>
         </div>
 
@@ -561,13 +561,13 @@
                         $(".dark-bg").removeClass('dark-bg').addClass('white-bg');
                         $(".dark-vertion").removeClass('dark-vertion').addClass('white-vertion');
                         $(".switch-button").css('background-color', '#202026');
-                        $(".fa-spin").css('color', '#FFFFFF');
+                        $("#theme").removeClass('fa-sun-o').addClass('fa-moon-o').css('color', '#FFFFFF');
                         status = false;
                     } else {
                         $(".white-bg").removeClass('white-bg').addClass('dark-bg');
                         $(".white-vertion").removeClass('white-vertion').addClass('dark-vertion');
                         $(".switch-button").css('background-color', '#FFFFFF');
-                        $(".fa-spin").css('color', '#202026')
+                        $("#theme").removeClass('fa-moon-o').addClass('fa-sun-o').css('color', '#202026')
                         status = true;
                     }
                 });
