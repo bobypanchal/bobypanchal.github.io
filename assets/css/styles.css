@@ -1927,13 +1927,15 @@ li .fa {
   line-height: 22px;
 }
 
-.mh-work .mh-experience-deatils .mh-work-item .work-responsibility li {
+.mh-work .mh-experience-deatils .mh-work-item .work-responsibility li,
+.mh-education .mh-education-deatils .mh-education-item .education-achivement li {
   font-size: 14px;
   line-height: 23px;
   margin: 2px 0;
 }
 
-.mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa {
+.mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa,
+.mh-education .mh-education-deatils .mh-education-item .education-achivement li .fa {
   font-size: 10px;
   line-height: 23px;
   margin-right: 10px;
